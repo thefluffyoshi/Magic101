@@ -1,17 +1,20 @@
 public class Monster  extends Enemy
 {
     String terrain;
+    static int countMonster = 0;
 
     public Monster(String name, int might, boolean isHostile, String terrain)
     {
         super(name, might, isHostile);
         this.terrain = terrain;
+        countMonster++;
     }// end full constructor
 
     public Monster()
     {
         super();
         terrain = "Land";
+        countMonster++;
     }//end null constructor
 
     //Brain methods
