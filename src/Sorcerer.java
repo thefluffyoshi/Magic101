@@ -3,12 +3,14 @@ public class Sorcerer
     int health;
     String name;
     double mana;
+    String type;
 
-    public Sorcerer(String name, int health, double mana)
+    public Sorcerer(String name, int health, double mana, String type)
     {
         this.name = name;
         this.health = health;
         this.mana = mana;
+        this.type = type;
     }
 
     public Sorcerer()
@@ -16,6 +18,7 @@ public class Sorcerer
         name = "null";
         health = 50;
         mana = 35.0;
+        type = "fire";
     }
 
     //getters
@@ -47,6 +50,22 @@ public class Sorcerer
     public void setMana(double mana)
     {
         this.mana = mana;
+    }
+
+    public String typeDamage()
+    {
+        if (type.equalsIgnoreCase("fire"))
+        {
+            return "Avoid any water enemies";
+        }
+        else if (type.equalsIgnoreCase("ice"))
+        {
+            return "Avoid any fire enemies";
+        }
+        else //other types
+        {
+            return "Figure it out yourself, sorry!";
+        }
     }
 
     public String toString() {
