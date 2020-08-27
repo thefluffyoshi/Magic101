@@ -68,6 +68,34 @@ public class Sorcerer
         }
     }
 
+    public int heal()
+    {
+        if (health < 25)
+        {
+            return health = 35;
+        }
+        else
+        {
+            return health;
+        }
+    }
+
+    public double manaSpent(int health)
+    {
+        if (health < 25)
+        {
+            return mana = mana - 10;
+        }
+        else if (health >= 25 && health < 50)
+        {
+            return mana = mana + 15;
+        }
+        else
+        {
+            return mana;
+        }
+    }
+
     public String toString() {
         return "\nThe Sorcerer currently has: " +
                 "\n\tName: " + name +
