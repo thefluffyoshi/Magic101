@@ -1,10 +1,10 @@
 public class Slime extends Enemy
 {
-    boolean jump;
+    int jump;
     static int slimecount = 0;
     String color;
 
-    public Slime(String name, int might, boolean isHostile, boolean jump, String color)
+    public Slime(String name, int might, boolean isHostile, int jump, String color)
     {
         super(name, might, isHostile);
         this.jump = jump;
@@ -15,7 +15,7 @@ public class Slime extends Enemy
     public Slime()
     {
         super();
-        jump = false;
+        jump = 1;
         color = "transparent";
         slimecount++;
     }
@@ -33,6 +33,22 @@ public class Slime extends Enemy
         else //other colors!
         {
             return "Good luck with that";
+        }
+    }
+
+    public String jumpMeter()
+    {
+        if (jump < 5)
+        {
+            return "Not a threat, just a friend";
+        }
+        else if(jump >= 5 && jump < 15)
+        {
+            return "A little scary, don't get crushed";
+        }
+        else //(jump > 20);
+        {
+            return "You'll be crushed, don't risk it!";
         }
     }
 
