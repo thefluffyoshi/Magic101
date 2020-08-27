@@ -2,6 +2,7 @@ public class Dragon extends Enemy{
     //instance variables
     boolean hasFire;
     double wingspan;
+    static int countDragons = 0;
 
     //constructors
     public Dragon(String name, int might, boolean isHostile, boolean hasFire, double wingspan)
@@ -9,6 +10,7 @@ public class Dragon extends Enemy{
         super(name, might, isHostile);
         this.hasFire = hasFire;
         this.wingspan = validateWingspan(wingspan);
+        countDragons++;
     }// end full constructor
 
     public Dragon()
@@ -16,6 +18,7 @@ public class Dragon extends Enemy{
         super();
         hasFire = false;
         this.wingspan = 0;
+        countDragons++;
     }//end null constructor
 
 
@@ -29,6 +32,23 @@ public class Dragon extends Enemy{
 
         return wingspan;
     }
+
+    public String howStrong ()
+    {
+        if (might < 10)
+        {
+            return "You can handle it!";
+        }
+        else if (might >= 10 && might < 25)
+        {
+            return "You might struggle when you fight";
+        }
+        else
+        {
+            return "Run, not worth it!";
+        }
+    }
+
 
     //toString   this is the test output method
     @Override
