@@ -37,6 +37,11 @@ public class Sorcerer
         return mana;
     }
 
+    public String getType()
+    {
+        return type;
+    }
+
     //setters
     public void setHealth(int health)
     {
@@ -52,6 +57,10 @@ public class Sorcerer
         this.mana = mana;
     }
 
+    public void setType(String type)
+    {
+        this.type = type;
+    }
     public String typeDamage()
     {
         if (type.equalsIgnoreCase("fire"))

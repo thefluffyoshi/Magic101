@@ -20,6 +20,28 @@ public class Slime extends Enemy
         slimecount++;
     }
 
+    //getters
+    public int getJump()
+    {
+        return jump;
+    }
+
+    public String getColor()
+    {
+        return color;
+    }
+
+    //setters
+    public void setJump(int jump)
+    {
+        this.jump = jump;
+    }
+
+    public void setColor(String color)
+    {
+        this.color = color;
+    }
+
     public String compareColor()
     {
         if (color.equalsIgnoreCase("transparent"))

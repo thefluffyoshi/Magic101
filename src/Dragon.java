@@ -21,6 +21,27 @@ public class Dragon extends Enemy{
         countDragons++;
     }//end null constructor
 
+    //getters
+    public boolean getHasFire()
+    {
+        return hasFire;
+    }
+
+    public double getWingspan()
+    {
+        return wingspan;
+    }
+
+    //setters
+    public void setHasFire(boolean hasFire)
+    {
+        this.hasFire = hasFire;
+    }
+
+    public void setWingspan(double wingspan)
+    {
+        this.wingspan = wingspan;
+    }
 
     public double validateWingspan (double wingspan)
     {

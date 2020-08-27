@@ -26,6 +26,7 @@ public class Monster  extends Enemy
     {
         this.terrain = terrain;
     }
+
     //Brain methods
     public String mightReact()
     {
