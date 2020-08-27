@@ -10,7 +10,7 @@ public class Slime extends Enemy
     public Slime()
     {
         super();
-        jump = true;
+        jump = false;
     }
 
     @Override

@@ -18,22 +18,6 @@ public class Dragon extends Enemy{
         this.wingspan = 0;
     }//end null constructor
 
-    //getters
-    public String getName()
-    {
-        return name;
-    }//end getDragonName
-
-    public int getMight()
-    {
-        return might;
-    }
-
-    //setters
-    public void setName(String name)
-    {
-        this.name = name;
-    }
 
     public double validateWingspan (double wingspan)
     {
@@ -46,12 +30,7 @@ public class Dragon extends Enemy{
         return wingspan;
     }
 
-    public void setMight(int might)
-    {
-        this.might = might;
-    }
     //toString   this is the test output method
-
     @Override
     public String toString()
     {
