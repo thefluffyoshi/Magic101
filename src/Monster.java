@@ -17,6 +17,15 @@ public class Monster  extends Enemy
         countMonster++;
     }//end null constructor
 
+    public String getTerrain()
+    {
+        return terrain;
+    }
+
+    public void setTerrain(String terrain)
+    {
+        this.terrain = terrain;
+    }
     //Brain methods
     public String mightReact()
     {
