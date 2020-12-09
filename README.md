@@ -1,5 +1,8 @@
 # Project name: Magic101
 Class: Advanced Java with Android Studio
+
+People who worked on the project: thefluffyoshi (me)
+
 Submitted Aug 26 2020
 
 Characters in a Magic Game where there are Dragons, Slimes, Player, Monster and Sorcerer. They all have set values and can only be changed using code.
